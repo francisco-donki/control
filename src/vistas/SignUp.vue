@@ -203,9 +203,9 @@
 <script>
 import Navbar from "@/pantallas/PageLayout/Navbar.vue";
 import AppFooter from "@/pantallas/PageLayout/Footer.vue";
-import SoftInput from "@/pantallas/SoftInput.vue";
+/*import SoftInput from "@/pantallas/SoftInput.vue";
 import SoftCheckbox from "@/pantallas/SoftCheckbox.vue";
-import SoftButton from "@/pantallas/SoftButton.vue";
+import SoftButton from "@/pantallas/SoftButton.vue"; */
 
 import { mapMutations } from "vuex";
 
@@ -214,9 +214,9 @@ export default {
   components: {
     Navbar,
     AppFooter,
-    SoftInput,
+    /*SoftInput,
     SoftCheckbox,
-    SoftButton,
+    SoftButton,*/
   },
   created() {
     this.toggleEveryDisplay();

@@ -11,7 +11,7 @@
         id="iconSidenav"
       ></i>
       <a class="m-0 navbar-brand" href="/">
-        <img :src="logo" class="navbar-brand-img h-100" alt="main_logo" height="308" width="150" />
+        <img :src="logo" class="navbar-brand-img h-100" alt="main_logo" height="100" width="150" />
         <!--<span class="ms-1 font-weight-bold">Bienvenido..  "nombre"</span>-->
       </a>
     </div>
