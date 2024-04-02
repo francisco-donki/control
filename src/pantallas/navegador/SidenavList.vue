@@ -25,6 +25,13 @@
           </template>
         </sidenav-collapse>
       </li>
+      <li class="nav-item">
+        <sidenav-collapse navText="Usuario" :to="{ name: 'Profile' }">
+          <template #icon>
+            <customer-support />
+          </template>
+        </sidenav-collapse>
+      </li>
       <li class="mt-3 nav-item">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
@@ -57,7 +64,7 @@ import SidenavCollapse from "./SidenavCollapse.vue";
 import Shop from "../../components/Icon/Shop.vue";
 import Office from "../../components/Icon/Office.vue";
 import CreditCard from "../../components/Icon/CreditCard.vue";
-//import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
+import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
 //import Document from "../../components/Icon/Document.vue";
 import Spaceship from "../../components/Icon/Spaceship.vue";
 export default {
@@ -78,7 +85,7 @@ export default {
     Shop,
     Office,
     CreditCard,
-    //CustomerSupport,
+    CustomerSupport,
     //Document,
     Spaceship,
   },

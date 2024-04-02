@@ -24,42 +24,32 @@
       <hr class="my-4 horizontal gray-light" />
       <ul class="list-group">
         <li class="pt-0 text-sm border-0 list-group-item ps-0">
-          <strong class="text-dark">Full Name:</strong> &nbsp;
+          <strong class="text-dark">Nombre completo:</strong> &nbsp;
           {{ info.fullName }}
         </li>
         <li class="text-sm border-0 list-group-item ps-0">
-          <strong class="text-dark">Mobile:</strong> &nbsp; {{ info.mobile }}
+          <strong class="text-dark">Telefono:</strong> &nbsp; {{ info.mobile }}
         </li>
         <li class="text-sm border-0 list-group-item ps-0">
-          <strong class="text-dark">Email:</strong> &nbsp; {{ info.email }}
+          <strong class="text-dark">Correo:</strong> &nbsp; {{ info.email }}
         </li>
         <li class="text-sm border-0 list-group-item ps-0">
-          <strong class="text-dark">Location:</strong> &nbsp;
+          <strong class="text-dark">Adscripcion:</strong> &nbsp;
           {{ info.location }}
         </li>
-        <li class="pb-0 border-0 list-group-item ps-0">
-          <strong class="text-sm text-dark">Social:</strong> &nbsp;
-          <a
-            v-for="({ icon, link }, index) of social"
-            :key="index"
-            class="py-0 mb-0 btn-simple ps-1 pe-2"
-            :href="link"
-          >
-            <font-awesome-icon :icon="icon" />
-          </a>
-        </li>
+        
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+//import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {
   name: "ProfileInfoCard",
   components: {
-    FontAwesomeIcon,
+    //FontAwesomeIcon,
   },
   props: {
     title: {
@@ -77,12 +67,6 @@ export default {
       email: String,
       location: String,
       default: () => {},
-    },
-    social: {
-      type: Array,
-      link: String,
-      icon: String,
-      default: () => [],
     },
     action: {
       type: Object,
