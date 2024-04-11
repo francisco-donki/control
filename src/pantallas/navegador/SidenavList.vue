@@ -32,12 +32,19 @@
           </template>
         </sidenav-collapse>
       </li>
+      <li class="nav-item">
+        <sidenav-collapse navText="Autos" :to="{ name: 'Autos' }">
+          
+            <i class="bus-front-12"></i>
+          
+        </sidenav-collapse>
+      </li>
       <li class="mt-3 nav-item">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
           :class="this.$store.state.isRTL ? 'me-4' : 'ms-2'"
         >
-          Pruebas
+          Pruebas<i class="bus-front-12"></i>
         </h6>
       </li>
       <!--<li class="nav-item">
@@ -67,6 +74,7 @@ import CreditCard from "../../components/Icon/CreditCard.vue";
 import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
 //import Document from "../../components/Icon/Document.vue";
 import Spaceship from "../../components/Icon/Spaceship.vue";
+
 export default {
   name: "SidenavList",
   props: {

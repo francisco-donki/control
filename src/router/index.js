@@ -6,6 +6,7 @@ import Profile from "@/vistas/Profile.vue";
 import Rtl from "@/vistas/Rtl.vue";
 import SignIn from "@/vistas/SignIn.vue";
 import SignUp from "@/vistas/SignUp.vue";
+import auto from "@/vistas/auto.vue";
 
 const routes = [
   {
@@ -47,6 +48,11 @@ const routes = [
     path: "/sign-up",
     name: "Sign Up",
     component: SignUp,
+  },
+  {
+    path: "/auto",
+    name: "Autos",
+    component: auto
   },
 ];
 
